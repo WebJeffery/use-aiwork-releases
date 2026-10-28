@@ -7,10 +7,11 @@ useAiWork 桌面应用的公开安装包与签名更新资源。此仓库仅用�
 从 [最新 Release](https://github.com/WebJeffery/use-aiwork-releases/releases/latest) 下载适合平台的安装包，并阅读对应发布说明。
 
 - macOS Apple Silicon：下载 `use-aiwork-<版本>-macos-arm64.dmg` 安装包。
+- Windows x64：下载 `use-aiwork-<版本>-windows-x64-setup.exe` 安装包。
 - `.app.tar.gz` 与 `.sig` 用于应用内签名更新。
 - `latest.json` 为 Tauri 更新清单；`SHA256SUMS` 提供文件一致性校验。
 
-macOS 当前使用临时代码签名，未完成 Apple 公证。平台可用性以每次 Release 的实际资产为准。
+macOS 当前使用临时代码签名，未完成 Apple 公证。Windows 安装包尚未配置发布者证书。平台可用性以每次 Release 的实际资产为准。
 
 ## 更新与签名
 
