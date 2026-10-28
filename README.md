@@ -6,7 +6,7 @@ useAiWork 桌面应用的公开安装包与签名更新资源。此仓库仅用�
 
 从 [最新 Release](https://github.com/WebJeffery/use-aiwork-releases/releases/latest) 下载适合平台的安装包，并阅读对应发布说明。
 
-- macOS Apple Silicon：下载 `.dmg` 安装包。
+- macOS Apple Silicon：下载 `use-aiwork-<版本>-macos-arm64.dmg` 安装包。
 - `.app.tar.gz` 与 `.sig` 用于应用内签名更新。
 - `latest.json` 为 Tauri 更新清单；`SHA256SUMS` 提供文件一致性校验。
 
@@ -14,6 +14,6 @@ macOS 当前使用临时代码签名，未完成 Apple 公证。平台可用性�
 
 ## 更新与签名
 
-本仓库采用独立 updater 签名密钥。旧分发源的安装版需要手动安装本仓库的基线版本，后续使用应用内更新。私钥不存放于此仓库。
+本仓库采用独立 updater 签名密钥。本仓库提供全新独立应用，默认数据目录为 `~/.use-aiwork-desktop`；不读取、迁移或删除旧安装版的数据与偏好。请手动安装本仓库的基线版本，后续使用应用内更新。私钥不存放于此仓库。
 
 正式版本不可覆盖。每个 Release 包含同版本安装包、更新资源、发布说明与 SHA256 清单；发布前先上传草稿并核对资产。
